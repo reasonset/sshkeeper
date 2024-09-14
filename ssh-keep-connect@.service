@@ -1,0 +1,8 @@
+[Unit]
+Description=SSH Keep connection for proxy
+
+[Service]
+Type=simple
+RestartSec=3min
+Restart=always
+ExecStart=/usr/local/bin/ssh-keep-connect.rb %i
